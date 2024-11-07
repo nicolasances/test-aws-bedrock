@@ -1,0 +1,24 @@
+{
+  "name": "test-aws-bedrock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "npx nodemon",
+    "build": "rm -rf ./build && tsc",
+    "start": "node build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-bedrock": "^3.682.0",
+    "@aws-sdk/client-bedrock-runtime": "^3.682.0",
+    "boto3": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.18.119",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.6.3"
+  }
+}
